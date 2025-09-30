@@ -7,7 +7,7 @@
 )
 
 (defvar
-  tap-time 250
+  tap-time 210
   hold-time 200
 )
 
@@ -20,10 +20,10 @@
   k-mod (tap-hold $tap-time $hold-time k rsft)
   l-mod (tap-hold $tap-time $hold-time l ralt)
   ;-mod (tap-hold $tap-time $hold-time ; rmet)
-  escctl (tap-hold 150 100 esc lmet)
+  escctl (tap-hold 0 100 esc lmet)
 )
 
 (deflayer base
   @a-mod @s-mod @d-mod @f-mod @j-mod @k-mod
-  @l-mod @;-mod escctl
+  @l-mod @;-mod @escctl
 )
